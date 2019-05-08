@@ -21,15 +21,15 @@
 
     <script type="text/javascript">
         var clientId = 'client_id_' + Math.floor((Math.random() * 1000000) + 1);
-        client = new Paho.MQTT.Client("m24.cloudmqtt.com", 	32480, clientId);
+        client = new Paho.MQTT.Client("escribe aquí la direccion de tu servidor mqtt", 	escribe aqui tu puerto, clientId);
 
         client.onConnectionLost = onConnectionLost;
         client.onMessageArrived = onMessageArrived;
 
         var options = {
           useSSL: true,
-          userName: "pmxomwei",
-          password: "GguSEks38Tbp",
+          userName: "escribe aqui tu usuario mqtt",
+          password: "escribe aqui tu clave mqtt",
           onSuccess:onConnect,
           onFailure:doFail
         }
